@@ -1,1 +1,163 @@
+Skip to content
+Navigation Menu
+SanthoshKumar0403
+MACHINE_LEARNING---Projects
 
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit 46da202
+SanthoshKumar0403
+SanthoshKumar0403
+authored
+5 days ago
+Verified
+Enhance README with heart disease prediction project details
+Added detailed project overview and instructions for heart disease prediction ML project.
+main
+1 parent 
+c46fccf
+ commit 
+46da202
+File tree
+Filter files…
+README.md
+1 file changed
++178
+-2
+lines changed
+Search within code
+ 
+‎README.md‎
++178
+-2
+Lines changed: 178 additions & 2 deletions
+
+
+Original file line number	Diff line number	Diff line change
+@@ -1,2 +1,178 @@
+# MACHINE_LEARNING---Projects
+ML_Projects
+🫀 Heart Disease Prediction – Machine Learning Project
+A complete Machine Learning classification pipeline to predict the presence of heart disease using clinical data.
+This project showcases end-to-end ML workflow, including EDA, preprocessing, model building, evaluation, and insights.
+🚀 Project Summary
+Component	Description
+Problem Type	Binary Classification
+Model Used	Random Forest Classifier
+Evaluation Method	10-Fold Cross-Validation
+Average Accuracy	~82%
+Tech Skills	Scikit-Learn, Pandas, NumPy, Data Visualization
+Status	✅ Functional Prototype
+This system can support healthcare professionals in early detection and risk assessment of heart disease.
+🛠️ Tech Stack
+Python
+Pandas, NumPy
+Scikit-Learn
+Matplotlib, Seaborn
+Jupyter Notebook
+📊 Dataset Description
+The dataset contains clinical attributes used to predict the presence of heart disease.
+Target Variable
+target:
+1 → Heart Disease
+0 → No Heart Disease
+Main Features (Columns)
+Feature	Description	Type
+age	Age of patient	Numerical
+sex	Gender	Numerical
+cp	Chest Pain Type (4 types)	Categorical
+trestbps	Resting blood pressure	Numerical
+chol	Serum cholesterol (mg/dl)	Numerical
+thalach	Maximum heart rate achieved	Numerical
+oldpeak	ST depression induced by exercise	Numerical
+thal	Thalassemia category	Categorical
+📈 ML Pipeline Overview
+1️⃣ Exploratory Data Analysis (EDA)
+Visualized feature distributions
+Checked correlations
+Identified important risk factors
+2️⃣ Data Preprocessing
+✔ Standardized numerical features
+✔ One-Hot Encoding for categorical variables
+✔ Train-test split for initial evaluation
+3️⃣ Model Training
+Model: Random Forest Classifier
+Chosen for:
+High accuracy
+Handles non-linear relationships
+Provides feature importance
+4️⃣ Model Evaluation
+10-Fold Cross-Validation
+Average Accuracy:
+# Average accuracy:
+0.8199888765294772   # (~82%)
+🌟 Feature Importance
+Top contributing features identified by Random Forest:
+cp – Chest Pain Type
+thal – Thalassemia
+oldpeak – ST depression
+thalach – Max heart rate achieved
+These features show strong predictive influence in the diagnosis.
+📂 Project Structure
+├── heart_disease_prediction.ipynb   # Main notebook
+├── data/
+│   └── heart.csv
+├── images/
+│   ├── heatmap.png
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
+└── README.md
+▶️ How to Run the Project
+1. Clone Repository
+git clone https://github.com/<your-username>/MACHINE_LEARNING---Projects.git
+2. Install Dependencies
+pip install -r requirements.txt
+3. Run Jupyter Notebook
+jupyter notebook
+Open:
+heart_disease_prediction.ipynb
+💡 Results
+Achieved ~82% accuracy
+Well-generalized performance using cross-validation
+Strong predictive signals from key clinical features
+🚀 Future Enhancements
+🔧 1. Hyperparameter Tuning
+Use GridSearchCV or RandomizedSearchCV to optimize:
+n_estimators
+max_depth
+min_samples_leaf
+🔄 2. Model Comparison
+Try:
+SVM
+Gradient Boosting
+XGBoost
+Logistic Regression (baseline)
+🌐 3. Deployment
+Export model using pickle/joblib
+Build a web app using Flask or Streamlit
+🧠 4. Explainability
+Add:
+SHAP values
+LIME explanations
+📬 Contact
+Author: Santosh
+Domain: Data Science | Machine Learning
+Goal: Building practical ML applications
+⚠️ Disclaimer
+This project is for educational purposes only and should not be used as a medical diagnostic tool.
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
+
+ 
