@@ -1,1 +1,130 @@
+🔥 Natural Gas Price Prediction & Storage Valuation
 
+Strategic Time-Series Analysis for Energy Market Decision-Making
+
+Author: Santosh Kumar
+Role Target: Data Analyst | Data Scientist | Quantitative Analyst
+
+📌 Project Overview
+
+This project delivers a data-driven framework to analyze, forecast, and economically evaluate natural gas prices using historical market data.
+The objective is to support long-term storage and contract pricing decisions by modeling seasonality, trends, and volatility in natural gas markets.
+
+The solution mirrors how energy trading desks and strategy teams evaluate price curves for storage optimization and risk-aware planning.
+
+🎯 Business Objective
+
+Energy firms rely on accurate forward price expectations to decide:
+
+When to buy natural gas
+
+Whether to store it
+
+When to sell to maximize margins
+
+This project answers:
+
+“Given historical price behavior, what is the expected price of natural gas at any future date, and how can this be used to value storage decisions?”
+
+📊 Data Description
+
+Source: Market price snapshot data
+
+Frequency: Monthly (End-of-Month prices)
+
+Period Covered: October 2020 – September 2024
+
+Market Type: Physical natural gas delivery prices
+
+The dataset captures real-world energy market behavior, including volatility from global supply-demand disruptions. 
+
+Natural_Gas_Analysis
+
+🔍 Exploratory Data Analysis (EDA) – Key Insights
+
+✔ Strong Seasonality:
+
+Winter months show recurring price spikes driven by heating demand
+
+Summer prices remain relatively softer
+
+✔ Volatility Events:
+
+Sharp fluctuations during global energy disruptions
+
+Prices exhibit mean reversion over the long run
+
+✔ Strategic Insight:
+
+Storage acts as a volatility-smoothing and profit-enhancing mechanism
+
+🧠 Modeling Approach
+📈 Forecasting Technique: Holt-Winters Exponential Smoothing
+
+Why Holt-Winters?
+
+Explicitly models level, trend, and seasonality
+
+Robust for short- to medium-term energy price forecasting
+
+Widely used in industry and financial time-series analysis
+
+Model Intuition (Simplified):
+
+Level: Baseline price
+
+Trend: Directional movement over time
+
+Seasonality: Monthly recurring patterns
+
+Forecast = Level + Trend + Seasonality
+
+📉 Forecast Output
+
+Generated a 12-month forward price curve
+
+Enables:
+
+Indicative long-term pricing
+
+Strategic planning for storage contracts
+
+Designed for decision support, not high-frequency trading
+
+🏦 Storage Valuation Framework
+
+The project extends beyond forecasting into economic value creation:
+
+💡 Storage Logic
+
+Buy gas during low-price (summer) periods
+
+Store the gas
+
+Sell during high-price (winter) periods
+
+💰 Valuation Formula
+Storage Value = (Expected Future Sell Price − Purchase Price) × Volume − Storage Costs
+
+
+This mirrors real-world energy trading and infrastructure valuation models.
+
+📌 Illustrative Use Case
+
+Purchase natural gas during forecasted seasonal lows
+
+Withdraw and sell during forecasted winter peaks
+
+Use the forward curve to estimate expected margins and justify storage decisions
+
+⚠️ Limitations & Risk Considerations
+
+Does not explicitly model:
+
+Geopolitical shocks
+
+LNG supply disruptions
+
+Macroeconomic regime changes
+
+Assumes historical seasonality patterns persist
